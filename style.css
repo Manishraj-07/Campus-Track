@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.page-title {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    text-align: center;
+
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+
+    text-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.7),
+        0 0 20px rgba(255, 255, 255, 0.5),
+        0 0 40px rgba(0, 200, 255, 0.4);
+
+    letter-spacing: 1px;
+}
+
+/* Background neon animation */
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("IMG/logIn.png");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5) blur(2px);
+    z-index: -1;
+}
+
+/* Login box (Glassmorphism) */
+.login-box {
+    width: 380px;
+    padding: 35px;
+    border-radius: 20px;
+
+    /* Glass effect */
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    /* Strong glow */
+    box-shadow: 
+        0 0 25px rgba(255, 255, 255, 0.45),   /* Outer glow */
+        0 0 55px rgba(255, 255, 255, 0.25),   /* Larger glow */
+        inset 0 0 20px rgba(255, 255, 255, 0.08); /* Inner glow */
+
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
+
+    text-align: center;
+    color: white;
+}
+
+
+.login-box h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* Inputs */
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    font-size: 15px;
+}
+
+/* Options */
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.options a {
+    color: #fff;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+    background: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.register {
+    font-size: 14px;
+}
+
+.register a {
+    color: #fff;
+    font-weight: 600;
+}
